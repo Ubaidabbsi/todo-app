@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-
 }
 
 .screen {
@@ -10,8 +9,8 @@
     border: 1px solid black;
     max-width: 375px;
     margin: 10px auto;
+    /* height: 700px; */
     height: fit-content;
-    /* padding-bottom: 70px; */
     width: 375px;
     left: 0px;
     top: 0px;
@@ -120,7 +119,7 @@
     width: 297px;
     border-radius: 0px;
 
-    margin-top: 140px;
+    margin-top: 50px;
     margin-right: 60px;
     margin-left: 18px;
 }
@@ -136,16 +135,14 @@
 
 .m-add {
     position: relative;
+    /* margin-top: 50px; */
 }
 
-.m-footer {
-    margin-top: 230px;
-}
 
 .footer {
     position: relative;
     bottom: 12px;
-    margin-top: 70px;
+    margin-top: 300px;
     margin-left: 121px;
     height: 5px;
     width: 133px;
@@ -156,15 +153,15 @@
 }
 
 .add {
+    margin-top: 220px;
     position: relative;
     text-align: right;
     border-radius: [object Object]px;
 }
 
 #btn {
-    position: fixed;
-    right: 500px;
-    bottom: 30px;
+    position: absolute;
+    right: 6px;
 }
 
 .popup {
