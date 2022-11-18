@@ -1,0 +1,459 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+.screen {
+    position: relative;
+    border-radius: 30px;
+    border: 1px solid black;
+    max-width: 375px;
+    margin: 10px auto;
+    height: fit-content;
+    /* padding-bottom: 70px; */
+    width: 375px;
+    left: 0px;
+    top: 0px;
+    border-radius: [object Object]px;
+
+}
+
+.top p {
+    font-family: SF Pro Text;
+    font-size: 14px;
+    font-weight: 500;
+    /* line-height: 16px; */
+    letter-spacing: -0.2717391550540924px;
+    margin-top: 12.68px;
+    margin-left: 19.02px;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.small-logo {
+    margin-top: 12.68px;
+    margin-right: 15px;
+}
+
+.cat {
+    text-align: right;
+}
+
+.cat img {
+    margin-right: 12px;
+    margin-top: 12px;
+}
+
+.text {
+    margin-left: 18px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.text p {
+    font-family: SF Pro Display;
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 41px;
+    letter-spacing: 0.37400001287460327px;
+    text-align: left;
+    margin-top: 22px;
+}
+
+.text :nth-child(2) {
+    font-family: SF Pro Text;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0em;
+    /* text-align: left; */
+    color: #3478F6;
+    margin-top: 45px;
+    margin-right: 14px;
+}
+
+.text-2 input {
+    height: 20px;
+    width: 20px;
+    margin-left: 1px;
+    margin-top: 10px;
+    border-radius: 6px;
+    margin-right: 13px;
+    margin-bottom: 17px;
+
+}
+
+.text-2 p {
+    font-family: SF Pro Text;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: -0.23999999463558197px;
+    text-align: left;
+    color: #737373;
+
+}
+
+.text-2 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 35px;
+    display: flex;
+    height: fit-content;
+    width: 334px;
+    border-radius: 0px;
+    margin-left: 27px;
+    margin-right: 14px;
+}
+
+
+.main-a {
+    display: flex;
+}
+
+.tommorow {
+    height: 31px;
+    width: 297px;
+    border-radius: 0px;
+
+    margin-top: 140px;
+    margin-right: 60px;
+    margin-left: 18px;
+}
+
+.tommorow {
+    font-family: SF Pro Display;
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 41px;
+    letter-spacing: 0.37400001287460327px;
+    text-align: left;
+}
+
+.m-add {
+    position: relative;
+}
+
+.m-footer {
+    margin-top: 230px;
+}
+
+.footer {
+    position: relative;
+    bottom: 12px;
+    margin-top: 70px;
+    margin-left: 121px;
+    height: 5px;
+    width: 133px;
+    border-radius: 180px;
+
+    background: #000000;
+
+}
+
+.add {
+    position: relative;
+    text-align: right;
+    border-radius: [object Object]px;
+}
+
+#btn {
+    position: fixed;
+    right: 500px;
+    bottom: 30px;
+}
+
+.popup {
+
+
+    height: 630px;
+    width: 375px;
+    left: 24px;
+    top: -273px;
+    display: none;
+    border-radius: 0px;
+
+}
+
+.open-popup {
+    display: block;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.top-1 {
+    display: flex;
+    margin-top: 15px;
+    box-shadow: 0px 0.5px 0px 0px #0000004D;
+
+}
+
+button {
+    display: flex;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.top-1 img {
+    margin-left: 9px;
+    margin-bottom: 11px;
+
+}
+
+.top-1 p {
+    margin-bottom: 11px;
+
+    font-family: SF Pro Text;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: -0.40799999237060547px;
+    text-align: left;
+    color: #007AFF;
+    margin-left: 5px;
+}
+
+.top-1 div {
+    margin-bottom: 11px;
+
+    font-family: SF Pro Text;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: -0.40799999237060547px;
+    color: #000000;
+    margin-left: 90px;
+
+}
+
+.b-text {
+    margin-top: 27px;
+    margin-left: 29px;
+}
+
+.b-text p {
+    font-family: SF Pro Display;
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 41px;
+    letter-spacing: 0.37400001287460327px;
+    text-align: left;
+
+}
+
+.name {
+    height: 31px;
+    width: 312px;
+    margin-left: 29px;
+    margin-top: 33px;
+    border-radius: 0px;
+
+}
+
+.name label {
+    font-family: SF Pro Display;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.3799999952316284px;
+    text-align: left;
+
+}
+
+.name input {
+    width: 225px;
+    font-family: SF Pro Text;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: -0.30944928526878357px;
+    text-align: left;
+    margin-left: 17px;
+    padding-bottom: 14px;
+    border: none;
+    box-shadow: 0px 0.5px 0px 0px #0000004D;
+
+}
+
+input:focus {
+    outline: none;
+}
+
+.hour {
+    margin-left: 29px;
+    margin-top: 37px;
+    margin-right: 26px;
+    display: flex;
+}
+
+.hour p {
+    font-family: SF Pro Display;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.3799999952316284px;
+    text-align: left;
+
+}
+
+.hour input {
+    margin-left: 34px;
+    font-family: SF Pro Text;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: -0.23999999463558197px;
+    text-align: center;
+    background: rgba(118, 118, 128, 0.12);
+    border-radius: 6px;
+}
+
+.today-2 {
+    margin-left: 29px;
+    margin-top: 34.5px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.today-2 p {
+    font-family: SF Pro Display;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.3799999952316284px;
+    text-align: left;
+    margin-top: 4px;
+
+}
+
+.completed-task {
+    text-decoration: line-through;
+    opacity: 0.7;
+}
+
+.task-done {
+    opacity: 0.4;
+}
+
+#hide-c:hover {
+    cursor: pointer;
+}
+
+.list-t {
+    margin-top: 10px;
+}
+
+.toggle {
+    margin-right: 34px;
+
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background: #34C759;
+
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+#done {
+    height: 40.324607849121094px;
+    width: 310px;
+    left: 0px;
+    top: 0px;
+    border-radius: 11.581151962280273px;
+    margin-left: 40px;
+    margin-top: 60px;
+    margin-right: 19px;
+    background: #171717;
+    border-radius: 11.5812px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    font-family: SF Pro Text;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: -0.33750784397125244px;
+
+    color: #FFFFFF;
+}
+
+.end {
+    height: 36px;
+    width: 315px;
+    left: 30px;
+    top: 479px;
+    border-radius: 0px;
+    margin-left: 40px;
+    margin-right: 20px;
+    margin-top: 14px;
+}
+
+.end p {
+    font-family: SF Pro Text;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: -0.07800000160932541px;
+    /* text-align: left; */
+
+}

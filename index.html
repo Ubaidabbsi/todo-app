@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.cdnfonts.com/css/sf-pro-display" rel="stylesheet">
+    <link href="//db.onlinewebfonts.com/c/1c45e28f8e86cc89876f003b953cc3e9?family=SF+Pro+Text" rel="stylesheet"
+        type="text/css" />
+
+</head>
+
+<body>
+    <div class="screen">
+        <div class="todo" id="topup">
+            <div class="top">
+                <p>9:41</p>
+                <div class="small-logo">
+                    <img src="pix/Cellular Connection.png" alt="">
+                    <img src="pix/Wifi.png" alt="">
+                    <img src="pix/Battery.png" alt="">
+                </div>
+            </div>
+
+            <div class="cat">
+                <img src="pix/unsplash_yMSecCHsIBc.png" alt="">
+            </div>
+
+            <div id="hide-1">
+                <div class="text">
+                    <p>Today</p>
+                    <p id="hide-c" onclick="completedTaskHide()">Hide completed</p>
+                </div>
+
+            </div>
+            <div class="text-2" id="today-task">
+
+            </div>
+
+            <div id="hide-2">
+                <div class="tommorow">
+                    <p>Tommorow</p>
+                </div>
+
+
+                <div class="text-2" id="t-task">
+
+                </div>
+
+
+
+            </div>
+            <div class="m-add">
+                <div class="add">
+                    <button id="btn" onclick="openPopup()">
+                        <img src="pix/Left Icon.png" alt="">
+                    </button>
+                </div>
+            </div>
+            <div class="m-footer">
+
+                <div class="footer">
+
+                </div>
+            </div>
+
+        </div>
+
+        <!-- add task page -->
+
+
+        <div class="popup" id="popup-1">
+
+            <div class="top">
+                <p>9:41</p>
+                <div class="small-logo">
+                    <img src="pix/Cellular Connection.png" alt="">
+                    <img src="pix/Wifi.png" alt="">
+                    <img src="pix/Battery.png" alt="">
+                </div>
+            </div>
+
+            <div class="top-1">
+                <button onclick="closePopup()">
+                    <img src="pix/chevron.left.png" alt="">
+                    <p>Close</p>
+                </button>
+                <div>Task</div>
+            </div>
+
+            <div class="b-text">
+                <p>Add a task</p>
+            </div>
+
+            <div class="name">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Enter Your Name" s>
+            </div>
+
+            <div class="hour">
+                <p>Hour</p>
+                <input id="time-1" type="time">
+            </div>
+
+            <div class="today-2">
+                <p>Today</p>
+
+                <div class="toggle">
+                    <label class="switch">
+                        <input type="checkbox" id="checkbox-switch">
+                        <span class="slider round"></span>
+                    </label>
+
+                </div>
+            </div>
+
+            <button id="done" onclick="donePopup()">Done</button>
+            <!-- <div class="done">
+        </div> -->
+
+            <div class="end">
+                <p>
+                    If you disable today, the task will be considered as tomorrow
+                </p>
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+    <script>
+
+        function openPopup() {
+            document.getElementById("popup-1").style.display = "block";
+            document.getElementById("topup").style.display = "none";
+        }
+        function closePopup() {
+            document.getElementById("popup-1").style.display = "none";
+            document.getElementById("topup").style.display = "block";
+        }
+
+
+        // add task to home page
+        var CheckButton = document.getElementById("checkbox-switch");
+        //   check whether the today button is checked or not
+        CheckButton.addEventListener(
+            "click",
+            function (ev) {
+                if (ev.target) {
+                    ev.target.classList.toggle("checked");
+                }
+            },
+            false
+        );
+
+
+
+        function donePopup() {
+
+            document.getElementById("popup-1").style.display = "none";
+            document.getElementById("topup").style.display = "block";
+
+
+            if (CheckButton.classList.contains("checked")) {
+
+                var savet = document.querySelector(".text-2");
+
+                const savemain = document.createElement("div");
+                savemain.setAttribute("class", "main-a")
+                const save2 = document.createElement("div");
+
+
+                const addInput = document.createElement("input");
+                addInput.setAttribute("type", "checkbox");
+                addInput.classList.add("c-box");
+
+                save2.appendChild(addInput);
+                savemain.appendChild(save2);
+                savet.appendChild(savemain);
+
+                const node = document.createElement("div");
+
+                const textnode = document.createElement("p");
+                const para = document.createElement("p");
+
+                var input = document.getElementById("name").value;
+                var hours = document.getElementById("time-1").value;
+
+                textnode.innerHTML = input;
+                para.innerHTML = hours;
+
+                node.appendChild(textnode);
+                node.appendChild(para);
+                savemain.appendChild(node);
+                savet.appendChild(savemain);
+
+                //   checked the completed tasks
+
+                addInput.addEventListener(
+                    "click",
+                    function (ev) {
+                        if (ev.target) {
+                            ev.target.classList.toggle("checked");
+                            node.classList.toggle("task-done");
+                            savemain.classList.toggle("completed-task");
+                        }
+                    },
+                    false
+                );
+
+            } else {
+                //   appending new elements when user enter a new task to tommorow section
+
+                var savet = document.getElementById("t-task");
+
+                const savemain = document.createElement("div");
+                savemain.setAttribute("class", "main-a")
+                const save2 = document.createElement("div");
+
+
+                const addInput = document.createElement("li");
+                addInput.setAttribute("class", "list-t");
+                addInput.classList.add("c-box");
+
+                save2.appendChild(addInput);
+                savemain.appendChild(save2);
+                savet.appendChild(savemain);
+
+                const node = document.createElement("div");
+
+                const textnode = document.createElement("p");
+                const para = document.createElement("p");
+
+                var input = document.getElementById("name").value;
+                var hours = document.getElementById("time-1").value;
+
+                textnode.innerHTML = input;
+                para.innerHTML = hours;
+
+                node.appendChild(textnode);
+                node.appendChild(para);
+                savemain.appendChild(node);
+                savet.appendChild(savemain);
+
+
+            }
+        }
+        //   Hide completed tasks
+
+        let todayTasks = document.getElementById("today-task");
+
+        function completedTaskHide() {
+            var taskEnds = todayTasks.querySelectorAll(".completed-task");
+            for (const taskEnd of taskEnds) {
+                taskEnd.style.display = "none";
+            }
+        }
+
+    </script>
+
+
+
+
+
+</body>
+
+</html>
